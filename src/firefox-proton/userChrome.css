@@ -13,7 +13,7 @@
   padding-inline: 0 !important;
 }
 tab .tab-content {
-  border-image: url("notebook-tab-top.png") 2 / 2px stretch;
+  border-image: url("notebook-tab-top.png") 4 / 2px stretch;
 }
 tab.tabbrowser-tab {
   margin-top: 2px !important;
@@ -65,11 +65,11 @@ tab.tabbrowser-tab[selected] {
 }
 toolbarbutton:not([disabled]):not([open]):hover {
   background: #e6e5e1 !important;
-  border-image: url("button-hover.png") 2 / 2px stretch;
+  border-image: url("button-hover.png") 4 / 2px stretch;
 }
 toolbarbutton:not([disabled])[open] {
   background: #c8c5be !important;
-  border-image: url("button-pressed.png") 2 / 2px stretch;
+  border-image: url("button-pressed.png") 4 / 2px stretch;
 }
 toolbarbutton > .toolbarbutton-icon,
 #nav-bar toolbarbutton > .toolbarbutton-badge-stack {
@@ -84,8 +84,11 @@ toolbarbutton > .toolbarbutton-icon,
 }
 #urlbar > #urlbar-background, #searchbar {
   animation-duration: 0ms !important;
-  border-image: url("entry.png") 2 / 2px stretch !important;
-  box-shadow: none !important;
+  border-top: 1px solid #9e9a91 !important;
+  border-left: 1px solid #9e9a91 !important;
+  border-right: 1px solid white !important;
+  border-bottom: 1px solid white !important;
+  box-shadow: black 1px 1px inset, #dcdad5 -1px -1px inset !important;
   outline: none !important;
 }
 #urlbar[breakout][breakout-extend] {
@@ -101,7 +104,7 @@ toolbarbutton > .toolbarbutton-icon,
  * Bookmarks *
  *************/
 toolbarseparator::before {
-  border-image: url("separator-vertical.png") 1 / 1px stretch !important;
+  border-image: url("separator-vertical.png") 2 / 1px stretch !important;
   margin: 3px 0;
   width: 2px;
 }
@@ -110,7 +113,11 @@ toolbarseparator::before {
  * Find Bar *
  ************/
 .findbar-textbox {
-  border-image: url("entry.png") 2 / 2px stretch !important;
+  border-top: 1px solid #9e9a91 !important;
+  border-left: 1px solid #9e9a91 !important;
+  border-right: 1px solid white !important;
+  border-bottom: 1px solid white !important;
+  box-shadow: black 1px 1px inset, #dcdad5 -1px -1px inset !important;
 }
 .findbar-textbox[status="notfound"] {
   background: #f03838 !important;
